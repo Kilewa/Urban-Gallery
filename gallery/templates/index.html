@@ -2,6 +2,7 @@
 {% load static%}
 {% block content %}
 
+
 {{block.super}}
 
 
@@ -49,7 +50,7 @@
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-6">
-            <img src="{% static 'images/sorry.png' %}" alt="" class="oops">
+            <img src="{% static 'images/notfound.png' %}" alt="" class="oops">
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6">
             <h2 class="text-center"> Sorry no images for now. Check out again later</h2>
@@ -72,9 +73,8 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-9 col-lg-9">
-                            <a href="{% url 'single' category_name=image.image_category.name image_id=image.id %}"><img
-                                    id="img{{image.id}}" src="{{image.picture.cdn_url}}" class="img-thumbnail"
-                                    alt="Image" style="cursor:pointer"></a>
+                            <a href="{% url 'single' category_name=image.image_category.name image_id=image.id %}">
+                                <img id="img{{image.id}}" src="{{image.picture.cdn_url}}" class="img-thumbnail" alt="Image" style="cursor:pointer"></a>
 
                         </div>
                         <div class="col-md-3">
@@ -101,4 +101,4 @@
     {% endfor %}
 </div>
 
-{% endblock %}
+{% endblock %} 

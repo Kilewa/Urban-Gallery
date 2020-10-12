@@ -11,7 +11,7 @@ The Urban Gallery is a photo gallery web application to showcase beautiful pictu
 - Admin can upload images from a django dashboard
 
 ## View Live Site here
-View the complete site [here](link here/)
+View the complete site [here](https://urban-gllery.herokuapp.com/)
 
 
 ## Technologies Used
